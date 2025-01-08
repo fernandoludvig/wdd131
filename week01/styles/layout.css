@@ -1,0 +1,42 @@
+body {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center; /* alinhou no centro */
+    padding: 10px 0; /* aumentou o tamanho de dentro da caixa */
+}
+nav {
+    background-color: #000;
+    display: flex;
+    justify-content:space-around; /*espaço ao redor */
+}
+nav a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px; /* aumentou o tamanho de dentro da caixa */
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #575757; /* cor que fica ao colocar o mouse em cima */
+}
+.container {
+    display: grid;
+    grid-template-columns: 3fr 1fr; 
+    flex-wrap: wrap;
+    height: 100%;
+}
+.main-content {
+    background-color: #ccc;
+    padding: 20px;
+}
+.aside-content {
+    background-color: white;
+    padding: 20px;
+}
