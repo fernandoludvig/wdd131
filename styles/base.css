@@ -1,0 +1,55 @@
+body {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+header, footer {
+    background-color: #001a76;
+    color: white;
+    text-align: center; /* alinhou no centro */
+}
+nav {
+    background-color: rgb(65, 65, 70);
+    justify-content:space-around; /*espaço ao redor */
+    display: flex;
+}
+nav a {
+    color: white;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+nav a:hover {
+    background-color: #001a76;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr; 
+    flex-wrap: wrap;
+    height: 100%;
+}
+.about-me h1 {
+    background-color: #ccc;
+    text-align: center;
+    margin: 0; /* Remove a margem */
+    padding: 0; /* Remove o padding */
+    width: 100%; /* Garante que o h1 preencha toda a largura */
+}
+
+.about-me {
+    background-color: white;
+    padding: 20px;
+    margin: 0;
+
+}
+.web {
+    background-color: white;
+    padding: 20px;
+}
+footer {
+    /* Remova a altura fixa se não for necessário */
+    padding: 0px; /* Adicione padding se necessário */
+}

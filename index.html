@@ -3,9 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Fernando Ludvig</title>   
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. This page is created by Fernando Ludvig, showcasing my journey in web development.">
+    <meta name="author" content="Fernando Ludvig">
+    <link rel="stylesheet" href="styles/base.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Google Fonts -->
+    <script src="scripts/getdates.js" defer></script> <!--O atributo defer é importante porque ele garante que o script JavaScript seja executado apenas após o documento HTML ter sido completamente carregado 
+    e analisado. Isso significa que o JavaScript não bloqueará o carregamento da página, melhorando a performance e a experiência do usuário. 
+    Sem o defer, o script poderia ser executado antes que o DOM estivesse completamente disponível, resultando em erros se o script tentasse acessar elementos que ainda não foram carregados.
+    -->
 </head>
 <body>
-    <h1>WDD131 - Fernando Cardoso Ludvig</h1>
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals - Fernando Ludvig</h1>
+        <nav>
+            <a href="https://www.linkedin.com/in/fernando-ludvig-06664a230/" target="_blank">Linkedin</a>
+            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/37?lang=eng&utm_source=chatgpt.com" target="_blank">Scripture</a>
+            <a href="index.html">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="card about-me">
+                <h1>About Me</h1>
+                <p>My goal is to become a full stack developer. I'm currently learning HTML, CSS, and JavaScript.</p>
+            </section>
+            <section class="card web">
+                <h1>Web Development</h1>
+                <p>I'm passionate about creating dynamic and responsive web applications.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>© <span id="currentyear"></span> Fernando Ludvig, Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
