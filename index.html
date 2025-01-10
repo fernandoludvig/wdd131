@@ -7,17 +7,15 @@
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. This page is created by Fernando Ludvig, showcasing my journey in web development.">
     <meta name="author" content="Fernando Ludvig">
     <link rel="stylesheet" href="styles/base.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Google Fonts -->
-    <script src="scripts/getdates.js" defer></script> <!--O atributo defer é importante porque ele garante que o script JavaScript seja executado apenas após o documento HTML ter sido completamente carregado 
-    e analisado. Isso significa que o JavaScript não bloqueará o carregamento da página, melhorando a performance e a experiência do usuário. 
-    Sem o defer, o script poderia ser executado antes que o DOM estivesse completamente disponível, resultando em erros se o script tentasse acessar elementos que ainda não foram carregados.
-    -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
     <header>
         <h1>WDD 131 - Dynamic Web Fundamentals - Fernando Ludvig</h1>
         <nav>
-            <a href="https://www.linkedin.com/in/fernando-ludvig-06664a230/" target="_blank">Linkedin</a>
+            <a href="https://www.linkedin.com/in/fernando-ludvig-06664a230/" target="_blank">LinkedIn</a>
             <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
             <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/37?lang=eng&utm_source=chatgpt.com" target="_blank">Scripture</a>
             <a href="index.html">Final Project</a>
@@ -26,20 +24,44 @@
 
     <main>
         <div class="container">
-            <section class="card about-me">
+            <section class="about-me">
                 <h1>About Me</h1>
-                <p>My goal is to become a full stack developer. I'm currently learning HTML, CSS, and JavaScript.</p>
+                <div style="display: flex; justify-content: center; align-items: center; text-align: center;">
+                    <p style="max-width: 500px; margin-right: 20px;">
+                        My name is Fernando and I go by Fe. I was born in Brazil and live with my family in Florianópolis.
+                        I am currently working as a technical IT support at DataJuri.
+                        I love to play soccer and hang out with my friends and family.
+                    </p>
+                    <img src="images/eu.png" alt="Profile Image" style="border-radius: 5px; width: 150px; height: auto;" />
+                </div>
+                <h3>Florianópolis, Brazil</h3>
+                <hr/>
+                <div style="display: flex; justify-content: center; align-items: center; text-align: center;">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg" alt="Brazilian Flag" style="width: 120px; height: auto; margin-right: 20px;" />
+                    <p style="max-width: 600px;">
+                        Florianópolis, located on the southern coast of Santa Catarina, Brazil, 
+                        is renowned for its stunning beaches with clear turquoise waters, rich natural beauty featuring lush forests, dunes, and lagoons, and its historic architecture reflecting colonial heritage. 
+                        The city boasts a vibrant cultural scene with festivals, live music, and arts, alongside delicious seafood cuisine. It is also a hotspot for world-class surfing and windsurfing, as well as eco-tourism activities such as hiking, kayaking, and whale watching.
+                    </p>
+                </div>
+                <p style="font-style: italic; text-align: center;">Official Flag of Brazil</p>
             </section>
-            <section class="card web">
-                <h1>Web Development</h1>
-                <p>I'm passionate about creating dynamic and responsive web applications.</p>
+            <section class="web">
+                <h2>Web Dev Resources</h2>
+                <ul>
+                    <li><a href="#">Dev.to Community</a></li>
+                    <li><a href="#">Smashing Magazine</a></li>
+                    <li><a href="#">CSS Tricks</a></li>
+                    <li><a href="#">W3 Schools</a></li>
+                    <li><a href="#">Udemy</a></li>
+                    <li><a href="#">Image Placeholder</a></li>
+                </ul>
             </section>
         </div>
     </main>
-
     <footer>
-        <p>© <span id="currentyear"></span> Fernando Ludvig, Brazil</p>
-        <p id="lastModified"></p>
+        <p></p>
+        <p></p>
     </footer>
 </body>
 </html>

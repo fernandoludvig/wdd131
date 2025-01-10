@@ -1,55 +1,160 @@
+/* Base Styles */
 body {
     display: grid;
     grid-template-rows: auto auto 1fr auto;
     grid-template-columns: 1fr;
     height: 100vh;
     margin: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
 }
+
 header, footer {
     background-color: #001a76;
     color: white;
-    text-align: center; /* alinhou no centro */
+    text-align: center;
 }
+
+header h1 {
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 10px;
+}
+
 nav {
-    background-color: rgb(65, 65, 70);
-    justify-content:space-around; /*espaço ao redor */
+    background-color: #333;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
+
 nav a {
     color: white;
-    padding: 20px 16px;
+    padding: 10px 20px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1rem;
 }
+
 nav a:hover {
     background-color: #001a76;
+    border-radius: 5px;
+    transition: 0.3s;
 }
+
+/* Main Content */
 .container {
     display: grid;
-    grid-template-columns: 1.5fr 1fr; 
-    flex-wrap: wrap;
-    height: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #ffffff;
 }
-.about-me h1 {
+
+.about-me, .web {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about-me h1, .web h2 {
     background-color: #ccc;
     text-align: center;
-    margin: 0; /* Remove a margem */
-    padding: 0; /* Remove o padding */
-    width: 100%; /* Garante que o h1 preencha toda a largura */
-}
-
-.about-me {
-    background-color: white;
-    padding: 20px;
     margin: 0;
+    padding: 10px 0;
+    border-radius: 5px 5px 0 0;
+}
 
+hr {
+    width: 65%;
 }
-.web {
-    background-color: white;
-    padding: 20px;
+.about-me h3 {
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 30px;
 }
-footer {
-    /* Remova a altura fixa se não for necessário */
-    padding: 0px; /* Adicione padding se necessário */
+.about-me p, .web ul {
+    margin: 10px 0;
+}
+
+.web ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.web ul li {
+    margin: 5px 0;
+}
+
+.web ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.web ul li a:hover {
+    text-decoration: underline;
+}
+.about-me div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.about-me img {
+    border-radius: 5px;
+    max-width: 100%;
+    height: auto;
+}
+
+.about-me p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+img[alt="Brazilian Flag"] {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+img[alt="Profile Image"] {
+    width: 150px;
+    height: auto;
+    margin-left: 60px;
+    margin-top: 10px;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+footer p span {
+    color: #f1c40f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav a {
+        padding: 10px 5px;
+        font-size: 0.9rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
 }
