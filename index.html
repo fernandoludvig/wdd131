@@ -11,10 +11,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base.css"> <!-- Minified CSS -->
 
-    <script src="scripts/getdates.js" defer></script>
+    
+    <!-- Load Font Awesome asynchronously -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-..." crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+    <link rel="preload" href="scripts/getdates.js" as="script">
+    <script src="scripts/getdates.js" defer></script> <!-- Minified JS -->
 </head>
 <body>
     <header>
@@ -37,12 +41,12 @@
                         I am currently working as a technical IT support at DataJuri.
                         I love to play soccer and hang out with my friends and family.
                     </p>
-                    <img src="images/eu.png" alt="Profile Image" class="profile-img" />
+                    <img src="images//eu.png" alt="Profile Image" class="profile-img" width="150" height="auto" /> <!-- Use WebP -->
                 </div>
                 <h3>Florianópolis, Brazil</h3>
                 <hr />
                 <div class="center-flex">
-                    <img src="images/brazil.jpg" alt="Brazilian Flag" class="flag" />
+                    <img src="images/brazil.jpg " alt="Brazilian Flag" class="flag" width="100" height="auto" /> <!-- Use WebP -->
                     <p>
                         Florianópolis, located on the southern coast of Santa Catarina, Brazil, 
                         is renowned for its stunning beaches with clear turquoise waters, rich natural beauty featuring lush forests, dunes, and lagoons, and its historic architecture reflecting colonial heritage. 
@@ -62,8 +66,6 @@
                     <li><a href="#">Image Placeholder</a></li>
                 </ul>
             </section>
-
-            
         </div>
     </main>
 

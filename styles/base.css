@@ -137,19 +137,3 @@ footer p span {
     color: #f1c40f;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav a {
-        padding: 10px 5px;
-        font-size: 0.9rem;
-    }
-
-    header h1 {
-        font-size: 1.5rem;
-    }
-
-    .container {
-        grid-template-columns: 1fr;
-        padding: 10px;
-    }
-}
