@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Dynamic Web Fundamentals - Fernando Ludvig</title>   
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. This page is created by Fernando Ludvig, showcasing my journey in web development.">
+    <title>WDD 131 - Dynamic Web Fundamentals - Fernando Ludvig</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals is a course focused on essential web development concepts. Created by Fernando Ludvig, this portfolio highlights my progress and projects as a web developer.">
     <meta name="author" content="Fernando Ludvig">
+
+    <!-- Google Fonts and Stylesheets -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+
     <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
@@ -25,26 +30,27 @@
     <main>
         <div class="container">
             <section class="about-me">
-                <h1>About Me</h1>
-                <div style="display: flex; justify-content: center; align-items: center; ">
-                    <p style="max-width: 500px; margin-right: 20px;">
+                <h2>About Me</h2>
+                <div class="center-flex">
+                    <p>
                         My name is Fernando and I go by Fe. I was born in Brazil and live with my family in Florianópolis.
                         I am currently working as a technical IT support at DataJuri.
                         I love to play soccer and hang out with my friends and family.
                     </p>
-                    <img src="images/eu.png" alt="Profile Image" style="border-radius: 5px; width: 150px; height: auto;" />
+                    <img src="images/eu.png" alt="Profile Image" class="profile-img" />
                 </div>
                 <h3>Florianópolis, Brazil</h3>
-                <hr/>
-                <div style="display: flex; justify-content: center; align-items: center; ">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg" alt="Brazilian Flag" style="width: 120px; height: auto; margin-right: 20px;" />
-                    <p style="max-width: 600px;">
+                <hr />
+                <div class="center-flex">
+                    <img src="images/brazil.jpg" alt="Brazilian Flag" class="flag" />
+                    <p>
                         Florianópolis, located on the southern coast of Santa Catarina, Brazil, 
                         is renowned for its stunning beaches with clear turquoise waters, rich natural beauty featuring lush forests, dunes, and lagoons, and its historic architecture reflecting colonial heritage. 
                         The city boasts a vibrant cultural scene with festivals, live music, and arts, alongside delicious seafood cuisine. It is also a hotspot for world-class surfing and windsurfing, as well as eco-tourism activities such as hiking, kayaking, and whale watching.
                     </p>
                 </div>
             </section>
+
             <section class="web">
                 <h2>Web Dev Resources</h2>
                 <ul>
@@ -56,8 +62,11 @@
                     <li><a href="#">Image Placeholder</a></li>
                 </ul>
             </section>
+
+            
         </div>
     </main>
+
     <footer>
         <p></p>
         <p></p>
