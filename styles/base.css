@@ -79,8 +79,7 @@ hr {
 }
 
 .web ul {
-    list-style-type: none;
-    padding: 0;
+    padding: 40px;
 }
 
 .web ul li {
@@ -90,6 +89,7 @@ hr {
 .web ul li a {
     color: #007bff;
     text-decoration: none;
+    font-size: 20px;
 }
 
 .web ul li a:hover {
