@@ -1,0 +1,96 @@
+/* Mobile-first CSS */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4B0082;
+    color: white;
+    padding: 10px 20px;
+}
+
+.header h1 {
+    font-size: 1.8em;
+    margin: 0;
+}
+
+.nav {
+    position: relative;
+}
+
+.menu {
+    list-style: none; /* Remove marcadores (bolinhas) */
+    margin: 0; /* Remove margens externas */
+    padding: 0; /* Remove espaçamento interno */
+    display: none; /* Oculta o menu por padrão */
+    flex-direction: column; /* Estilo em coluna no mobile */
+    gap: 10px;
+    background-color: #4B0082;
+    position: absolute; /* Garante que o menu fica posicionado corretamente */
+    top: 100%; /* Posiciona abaixo do cabeçalho */
+    left: 0;
+    right: 0;
+    padding: 10px 0;
+    z-index: 1000; /* Garante que o menu aparece acima de outros elementos */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+}
+
+
+/* Estilo dos links */
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+/* Links no hover */
+.menu a:hover {
+    background-color: white;
+    color: #4B0082;
+    border-radius: 5px;
+}
+
+/* Botão hambúrguer */
+.hamburger {
+    font-size: 1.8em;
+    cursor: pointer;
+    display: block; /* Botão visível no mobile */
+    color: white;
+}
+
+
+.content {
+    text-align: center;
+    padding: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #4B0082;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    margin: 5px 0;
+}
