@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>W03 Assignment: Country Page - Fernando Ludvig</title>
+    <meta name="description" content="W03 Assignment: Country Page">
+    <meta name="author" content="Fernando Ludvig">
+    <link rel="stylesheet" href="week03/styles/place.css">
+    <link rel="stylesheet" href="week03/styles/place-large.css">
+    <script src="week03/scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Brazil</h1>
+    </header>
+
+    <main>
+        <div class="Hero">
+            <div class="hero-background">
+                <picture>
+                    <source srcset="week03/images/brasil.webp" media="(min-width:1200px)">
+                    <source srcset="week03/images/floripa2 (1).webp" media="(min-width:600px)" type="image/webp">
+                    <img src="week03/images/floripa2 (1).webp" alt="ponte hercilio luz" width="500" height="250">
+                </picture> 
+            </div>
+            <div class="hero-content">
+                <div class="card-1">
+                    <h2>Brazil Information</h2>
+                    <ul>
+                        <li><strong>Area:</strong> 8,515,767 km²</li>
+                        <li><strong>Population:</strong> 213 million</li>
+                        <li><strong>Capital:</strong> Brasília</li>
+                        <li><strong>Languages:</strong> Portuguese (official)</li>
+                        <li><strong>Currency:</strong> Brazilian Real (BRL)</li>
+                        <li><strong>Time Zone:</strong> UTC -3 (mainland Brazil), UTC -4 to UTC -2 (varies by region)</li>
+                        <li><strong>Calling Code:</strong> +55</li>
+                        <li><strong>Internet TLD:</strong> .br</li>
+                    </ul>
+                </div>
+
+                <div class="card-2">
+                    <h2>
+                        Current Weather 
+                        <span class="weather-icon-wide">⛅</span> 
+                        <span class="weather-icon-small"><img src="week03/images/icon.svg" alt="Weather Icon" class="weather-icon"></span>
+                    </h2>
+                    <ul>
+                        <li><strong>Temperature:</strong> 28°C</li>
+                        <li><strong>Conditions:</strong> Partly cloudy</li>
+                        <li><strong>Wind:</strong> 12 km/h</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div> 
+    </main>
+
+    <footer>
+        <p><span id="currentyear"></span></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
