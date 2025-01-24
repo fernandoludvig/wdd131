@@ -4,7 +4,7 @@
     --text-color: black;
     --card-bg-color: rgba(255, 255, 255, 0.8);
     --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    --font-family: 'Roboto', sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
 
@@ -149,5 +149,4 @@ footer {
     padding: 1em;
     background-color: var(--primary-color);
     color: #fff;
-}
 }
