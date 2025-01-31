@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Temple Album</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals is a course focused on essential web development concepts. Created by Fernando Ludvig, this portfolio highlights my progress and projects as a web developer.">
+    <meta name="author" content="Fernando Ludvig">
+
+    <link href="week02/styles/temples-large.css" rel="stylesheet"/>
+    <link href="week02/styles/temples.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="week04/styles/filtered-temples.css">
+    <link rel="stylesheet" href="week04/styles/filtered-temples-large.css">
+    <script defer src="week04/scripts/filtered-temples.js"></script>
+</head>
+<body>
+    <header class="header">
+        <h1>Temple Album</h1>
+        <nav class="nav">
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <ul class="menu">
+                <li><a href="#" onclick="displayTemples('all')">Home</a></li>
+                <li><a href="#" onclick="displayTemples('old')">Old</a></li>
+                <li><a href="#" onclick="displayTemples('new')">New</a></li>
+                <li><a href="#" onclick="displayTemples('large')">Large</a></li>
+                <li><a href="#" onclick="displayTemples('small')">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="content">
+        <h2>Home</h2>
+        <div class="gallery" id="gallery">
+            <!-- Temple cards will be dynamically inserted here -->
+        </div>
+    </main>
+    <footer class="footer">
+        <p>© <span id="year"></span> Fernando Ludvig <i class="fas fa-map-marker-alt icon"></i> Brazil</p>
+        <p>Last Modification: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>
