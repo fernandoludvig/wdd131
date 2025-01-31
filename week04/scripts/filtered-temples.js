@@ -56,30 +56,21 @@ const temples = [
       imageUrl:
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
-    // Additional temples
     {
-      templeName: "San Diego California",
-      location: "San Diego, California, United States",
-      dedicated: "1993, April, 25",
-      area: 72000,
+      templeName: "São Paulo Brazil",
+      location: "São Paulo, Brazil",
+      dedicated: "1978, October, 30",
+      area: 59000,
       imageUrl:
-      "https://churchofjesuschristtemples.org/assets/img/temples/san-diego-california-temple/san-diego-california-temple-48991.jpg"
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/sao-paulo-brazil/400x250/sao-paulo-brazil-temple-lds-856093-wallpaper.jpg"
     },
     {
-      templeName: "Salt Lake City Utah",
-      location: "Salt Lake City, Utah, United States",
-      dedicated: "1893, April, 6",
-      area: 253000,
+      templeName: "Recife Brazil",
+      location: "Recife, Brazil",
+      dedicated: "2000, December, 15",
+      area: 37000,
       imageUrl:
-      "https://churchofjesuschristtemples.org/assets/img/temples/salt-lake-temple/salt-lake-temple-5365.jpg"
-    },
-    {
-      templeName: "Rome Italy",
-      location: "Rome, Italy",
-      dedicated: "2019, March, 10",
-      area: 40000,
-      imageUrl:
-      "https://churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple-3509.jpg"
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/recife-brazil/400x250/recife-brazil-temple-lds-82747-wallpaper.jpg"
     }
   ];
   
@@ -91,7 +82,7 @@ const temples = [
       const img = document.createElement('img');
       img.src = temple.imageUrl;
       img.alt = temple.templeName;
-      img.loading = 'lazy';
+      img.loading = 'lazy'; // Lazy loading for better performance
   
       const caption = document.createElement('figcaption');
       caption.innerHTML = `<strong>${temple.templeName}</strong><br>${temple.location}<br>Dedicated: ${temple.dedicated}<br>Area: ${temple.area} sq ft`;
@@ -121,28 +112,41 @@ const temples = [
       });
   }
   
-  // Initial display of all temples
-  displayTemples('all');
+  // Add event listeners to navigation links
+  document.addEventListener('DOMContentLoaded', () => {
+      const navLinks = document.querySelectorAll('.menu a');
+      navLinks.forEach(link => {
+          link.addEventListener('click', (e) => {
+              e.preventDefault();
+              const filter = link.textContent.toLowerCase();
+              displayTemples(filter);
+          });
+      });
   
-  // Exibir o ano atual e a última modificação
+      // Initial display of all temples
+      displayTemples('all');
+  });
+  
+  // Display the current year and last modified date
   document.getElementById("year").textContent = new Date().getFullYear();
   document.getElementById("last-modified").textContent = document.lastModified;
   
+  // Toggle menu for mobile view
   function toggleMenu() {
       const menu = document.querySelector(".menu");
       menu.style.display = menu.style.display === "flex" ? "none" : "flex";
   }
   
-  // Garante que o menu é exibido corretamente ao redimensionar
+  // Ensure the menu is displayed correctly on window resize
   window.addEventListener("resize", () => {
       const menu = document.querySelector(".menu");
       const hamburger = document.querySelector(".hamburger");
   
       if (window.innerWidth >= 600) {
-          menu.style.display = "flex"; // Mostra o menu em telas maiores
-          hamburger.style.display = "none"; // Esconde o botão hambúrguer
+          menu.style.display = "flex"; // Show menu on larger screens
+          hamburger.style.display = "none"; // Hide hamburger button
       } else {
-          menu.style.display = "none"; // Oculta o menu em telas menores
-          hamburger.style.display = "block"; // Exibe o botão hambúrguer
+          menu.style.display = "none"; // Hide menu on smaller screens
+          hamburger.style.display = "block"; // Show hamburger button
       }
   });

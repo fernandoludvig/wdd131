@@ -6,24 +6,30 @@
     <title>Temple Album</title>
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals is a course focused on essential web development concepts. Created by Fernando Ludvig, this portfolio highlights my progress and projects as a web developer.">
     <meta name="author" content="Fernando Ludvig">
-
-
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <meta name="keywords" content="temples, LDS temples, temple album, Fernando Ludvig">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Temple Album">
+    <meta property="og:description" content="Explore a collection of LDS temples around the world.">
+    <meta property="og:image" content="https://example.com/temple-album.jpg">
+    <meta property="og:url" content="https://example.com/temple-album">
+    <link href="week02/styles/temples-large.css" rel="stylesheet"/>
+    <link href="week02/styles/temples.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" rel="noopener"/>
     <link rel="stylesheet" href="week04/styles/filtered-temples.css">
     <link rel="stylesheet" href="week04/styles/filtered-temples-large.css">
     <script defer src="week04/scripts/filtered-temples.js"></script>
 </head>
 <body>
-    <header class="header">
+    <header class="header" role="banner">
         <h1>Temple Album</h1>
-        <nav class="nav">
-            <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <nav class="nav" role="navigation">
+            <div class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">☰</div>
             <ul class="menu">
-                <li><a href="#" onclick="displayTemples('all')">Home</a></li>
-                <li><a href="#" onclick="displayTemples('old')">Old</a></li>
-                <li><a href="#" onclick="displayTemples('new')">New</a></li>
-                <li><a href="#" onclick="displayTemples('large')">Large</a></li>
-                <li><a href="#" onclick="displayTemples('small')">Small</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
             </ul>
         </nav>
     </header>
@@ -33,7 +39,7 @@
             <!-- Temple cards will be dynamically inserted here -->
         </div>
     </main>
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <p>© <span id="year"></span> Fernando Ludvig <i class="fas fa-map-marker-alt icon"></i> Brazil</p>
         <p>Last Modification: <span id="last-modified"></span></p>
     </footer>
