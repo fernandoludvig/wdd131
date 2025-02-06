@@ -1,0 +1,128 @@
+/* General Styles */
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  
+  header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  h1, h2, h3 {
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  main {
+    padding: 1rem;
+  }
+  
+  section {
+    margin-bottom: 2rem;
+  }
+  
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
+  /* Color Schema Examples */
+  .color-example {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+  }
+  
+  .primary-color {
+    background-color: #4CAF50;
+  }
+  
+  .secondary-color {
+    background-color: #333;
+  }
+
+  /* Estilos para a seção de Wireframe */
+.wireframe-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .wireframe-section h2 {
+    color: #4CAF50;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 15px;
+  }
+  
+  .wireframe-section p {
+    color: #333;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Estilos para a visualização mobile */
+  .mobile-view {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .mobile-view h3 {
+    color: #4CAF50;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  .mobile-description {
+    color: #555;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.6;
+  }
+  
+  .mobile-description strong {
+    color: #4CAF50;
+  }
+  
+  /* Estilos para a visualização desktop */
+  .desktop-view {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .desktop-view h3 {
+    color: #4CAF50;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  .desktop-view img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
