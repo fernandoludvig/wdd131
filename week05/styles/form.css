@@ -1,9 +1,11 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif; /* Aplica a fonte Roboto */
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
+
+/* Restante do CSS permanece o mesmo */
 
 header {
     background-color: #333;
