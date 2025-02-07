@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submitted</title>
+    <link rel="stylesheet" href="week05/styles/review.css">
+</head>
+<body>
+    <header>
+        <h1>Review Submitted</h1>
+    </header>
+    <main>
+        <p>Thank you for your review!</p>
+        <p id="reviewCount"></p>
+    </main>
+    <footer>
+        <p>&copy; 2025 Fernando Ludvig</p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let reviewCount = localStorage.getItem("reviewCount") || 0;
+            reviewCount++;
+            localStorage.setItem("reviewCount", reviewCount);
+            document.getElementById("reviewCount").textContent = `Total Reviews Submitted: ${reviewCount}`;
+        });
+    </script>
+</body>
+</html>
