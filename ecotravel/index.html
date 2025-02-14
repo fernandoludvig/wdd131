@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoTravel - Sustainable Travel Guide</title>
+  <meta name="description" content="Project: EcoTravel">
+  <meta name="author" content="Fernando Ludvig">
+
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <h1>EcoTravel</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="tips.html">Tips & Resources</a></li>
+          </ul>
+        </nav>
+      </header>
+
+  <main>
+    <section class="intro">
+        <h2>Welcome to EcoTravel</h2>
+        <p>
+          At EcoTravel, we believe that exploring the world should not come at the expense of our planet. 
+          Our mission is to guide you toward eco-friendly destinations and sustainable travel practices that 
+          help preserve the beauty of nature for future generations. Whether you're planning a relaxing 
+          getaway or an adventurous journey, we provide the resources and tips you need to make your travels 
+          both memorable and environmentally responsible.
+        </p>
+        <p>
+          Join us in making a positive impact on the world. Discover breathtaking destinations that prioritize 
+          sustainability, learn how to reduce your carbon footprint while traveling, and connect with a community 
+          of like-minded travelers who share your passion for the planet.
+        </p>
+        <a href="destinations.html" class="btn">Explore Destinations</a>
+      </section>
+
+    <section class="hero">
+      <div class="carousel">
+        <img src="images/Teste.jpg" alt="Eco-friendly destination 1" class="carousel-image active" loading="lazy">
+        <img src="images/New Zeland.jpg" alt="Eco-friendly destination 2" class="carousel-image" loading="lazy">
+        <img src="images/waterfall.jpg" alt="Eco-friendly destination 3" class="carousel-image" loading="lazy">
+      </div>
+      <button id="prevBtn">&#10094;</button>
+      <button id="nextBtn">&#10095;</button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> EcoTravel <i class="fas fa-map-marker-alt icon"></i> All Rights Reserved</p>
+    <p>Last Modification: <span id="last-modified"></span></p>
+    <p><a href="references.html">References</a></p>
+  </footer>
+</body>
+</html>
